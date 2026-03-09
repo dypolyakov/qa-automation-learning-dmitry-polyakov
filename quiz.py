@@ -3,8 +3,9 @@ from quiz_data import get_questions
 
 
 class Quiz:
-    questions = get_questions()
-    score = 0
+    def __init__(self):
+        self.questions = get_questions()
+        self.score = 0
 
     def start(self):
         for question in self.questions:
