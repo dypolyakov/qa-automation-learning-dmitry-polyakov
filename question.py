@@ -6,11 +6,11 @@ class Question:
         self.text = text
         self.answers = answers
 
-    def print_question(self):
+    def show(self):
         print(self.text)
         for i, answer in enumerate(self.answers, start=1):
             print(f"{i}. {answer.text}")
         print()
 
-    def check_answer(self, choice: int) -> bool:
-        return self.answers[choice - 1].is_correct
+    def is_correct_answer(self, answer: int) -> bool:
+        return self.answers[answer - 1].is_correct
