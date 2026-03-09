@@ -1,3 +1,6 @@
+import random
+from copy import deepcopy
+
 from answer import Answer
 from question import Question
 
@@ -50,5 +53,10 @@ data = [
 ]
 
 
-def get_questions() -> list[Question]:
-    return data
+def get_questions(shuffle: bool) -> list[Question]:
+    questions = deepcopy(data)
+    if shuffle:
+        for question in questions:
+            random.shuffle(question.answers)
+        random.shuffle(questions)
+    return questions

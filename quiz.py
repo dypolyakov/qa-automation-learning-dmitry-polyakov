@@ -3,7 +3,7 @@ from quiz_data import get_questions
 
 class Quiz:
     def __init__(self):
-        self.questions = get_questions()
+        self.questions = get_questions(shuffle=True)
         self.score = 0
 
     def start(self):
