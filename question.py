@@ -12,6 +12,5 @@ class Question:
             print(f"{i}. {answer.text}")
         print()
 
-
     def check_answer(self, choice: int) -> bool:
         return self.answers[choice - 1].is_correct

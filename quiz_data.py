@@ -8,15 +8,43 @@ data = [
             Answer("Москва", True),
             Answer("Екатеринбург", False),
             Answer("Пенза", False),
-            Answer("Санкт-Петербург", False)
+            Answer("Новосибирск", False)
         ]
     ),
     Question(
-        "Какого цвета трава?",
+        "Сколько будет 2 + 2?",
         [
-            Answer("Красный", False),
-            Answer("Зеленый", True),
-            Answer("Синий", False)
+            Answer("3", False),
+            Answer("4", True),
+            Answer("5", False),
+            Answer("6", False)
+        ]
+    ),
+    Question(
+        "Какого цвета небо в ясную погоду?",
+        [
+            Answer("Зеленое", False),
+            Answer("Синее", True),
+            Answer("Красное", False),
+            Answer("Черное", False),
+            Answer("Желтое", False)
+        ]
+    ),
+    Question(
+        "Сколько дней в неделе?",
+        [
+            Answer("5", False),
+            Answer("6", False),
+            Answer("7", True)
+        ]
+    ),
+    Question(
+        "На каком языке программирования пишутся авто-тесты в Smartway?",
+        [
+            Answer("Java", False),
+            Answer("Python", True),
+            Answer("C#", False),
+            Answer("TypeScript", False)
         ]
     )
 ]
