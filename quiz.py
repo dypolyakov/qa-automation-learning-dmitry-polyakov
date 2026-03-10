@@ -31,6 +31,7 @@ class Quiz:
                     return selected_option
             except ValueError:
                 pass
+            print(f"Введено неверное значение {player_input}, нужно ввести число от 1 до {answers_count}")
 
     def _print_final_score(self):
         print(f"Результат {self.score}/{len(self.questions)}")
